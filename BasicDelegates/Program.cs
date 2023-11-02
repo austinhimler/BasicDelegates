@@ -43,7 +43,7 @@ namespace BasicDelegates
         {
             using (StreamWriter sw = new StreamWriter(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Log.txt"), true))
             {
-                Console.WriteLine($"{DateTime.Now}: {text}");
+                sw.WriteLine($"{DateTime.Now}: {text}");
             }
         }
     }
